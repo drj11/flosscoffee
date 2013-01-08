@@ -1,0 +1,41 @@
+# Learning objectives
+
+Students will be able to write simple functions.
+
+will be able to write simple computations involving strings,
+numbers, lists, objects.
+
+will be able to do routine conversion from JSON string to
+object.
+
+will be able to call functions in a particular sequence to
+achieve a particular result.
+
+explain how variable scoping works.
+
+# Quiz
+
+
+## Rearrange the following lines into the correct program:
+
+    # A CoffeeScript function that turns a singular into
+      else
+      if word.match /s$/
+    # its plural form.
+    pluralise = (word) ->
+        return word + 'es'
+        return word + 's'
+
+## Do the same for this one:
+
+    fibonacci = (x) ->
+      return fibonacci(x-1) + fibonacci(x-2)
+      return x if x < 2
+
+## Write a comment to document this function:
+
+    r = (l) ->
+      N = l.length
+      for i in [0..N-1]
+        l[N-i..].concat l[..N-i-1]
+
