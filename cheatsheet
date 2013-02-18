@@ -81,3 +81,12 @@ Arrays (aka lists)
 
 
 Objects (aka tables, dicts, hashes)
+
+    { name: "CoffeeScript",
+      score: 9 }
+    # or without curly brackets:
+    name: "CoffeeScript"
+    score: 9
+    # Iteration:
+    for key of table:
+      key
