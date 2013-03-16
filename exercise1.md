@@ -6,9 +6,8 @@ Use ```clear()``` to empty the drawing area.
 
 Define ```simplepie``` to be a function that takes a single list as an
 argument and draws the pie chart. ```simplepie``` should choose a fixed
-position and size for the pie chart.
-
-I've started it already, you just need to fill in the blanks:
+position and size for the pie chart. I've started it already, you just
+need to fill in the blanks:
 
     simplepie = (listArg) ->
       piechart __, __, __, __
@@ -29,3 +28,5 @@ the object, and the slice sizes are taken from the values.
       ks = (__ for k,v in __)
       vs = ____
       piechart ____
+
+Test with ```legendpie { grass: 94, sedge: 6}```
