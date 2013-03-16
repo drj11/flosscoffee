@@ -1,6 +1,6 @@
 # Timetable #
 
-Draft
+Provisional
 
 Timings (from latest timetable on
 http://www.flossuk.org/Events/Spring2013/Schedule)
