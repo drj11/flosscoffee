@@ -20,13 +20,19 @@
 
     # Most of the bitwise stuff is archaic, but it works.
 
+# True and False (Boolean literals)
+
+    true false
+    yes no
+    on off
+
 # Comparisons
 
     == != is isnt # equality (like === in JavaScript)
     < <= >= > 
     not !
 
-    # It's fun to chain them:
+    # It's fun to chain them (like BCPL, and Python):
     'cat' < 'dog' < 'owl'
 
     && || # like C, JavaScript
@@ -90,3 +96,18 @@ Objects (aka tables, dicts, hashes)
     # Iteration:
     for key of table:
       key
+
+Assignment
+
+    a = 7 # simple assignment
+    a += 1 # assignment operators (like C, Python, JavaScript)
+
+    # Destructuring assignment:
+    [a, b] = ['alice', 'bob']
+    [p, q] = [q, p] # swaps p and q, no temporary variable required
+
+    # Destructuring assignment with objects:
+    options =
+      fill: 'blue'
+      stroke: yes
+    {stroke} = options  # same as stroke = options.stroke
