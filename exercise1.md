@@ -16,3 +16,16 @@ I've started it already, you just need to fill in the blanks:
     # test with:
     simplepie [1, 2, 9]
 
+Legends can be added to a pie chart like this (note it is smaller than
+before, in order to fit the legend on):
+
+    piechart 200,200,100, [2,5,4], legend: ['otter', 'marmot', 'mongoose']
+
+Write a function ```legendpie``` that takes an object (with keys and
+values), and draws a pie chart where the legend is taken from the keys of
+the object, and the slice sizes are taken from the values.
+
+    legendpie = (obj) ->
+      ks = (__ for k,v in __)
+      vs = ____
+      piechart ____
