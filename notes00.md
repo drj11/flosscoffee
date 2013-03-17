@@ -6,7 +6,12 @@ Invite anyone to ask questions at any time.
 
 go to http://drj11.github.com/coffeeplay
 
-Explain input, output, error messages.
+Explain input, output, error messages. For example, the different
+between:
+
+    "hello"
+    hello
+    "hello
 
 Explain what a hack coffeeplay is, and please report any bugs. We might
 even fix them live.
@@ -51,4 +56,14 @@ Which is itself a value just like any other:
 
     undefined
 
+Calling a function with multiple arguments:
 
+    Math.max 2,5,3
+
+If we want to nest function calls we sometimes have to be careful with
+our brackets:
+
+    Math.max Math.min 1, x, 0 # wrong
+    Math.max Math.min(1, x), 0 # right
+    Math.max(Math.min 1, x), 0 # right, but obscure; not recommended style.
+    Math.max 0, Math.min 1, x
