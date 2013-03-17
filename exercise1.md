@@ -25,7 +25,7 @@ values), and draws a pie chart where the legend is taken from the keys of
 the object, and the slice sizes are taken from the values.
 
     legendpie = (obj) ->
-      ks = (__ for k,v in __)
+      ks = (__ for k,v of __)
       vs = ____
       piechart ____
 

@@ -67,3 +67,5 @@ our brackets:
     Math.max Math.min(1, x), 0 # right
     Math.max(Math.min 1, x), 0 # right, but obscure; not recommended style.
     Math.max 0, Math.min 1, x
+
+(In fact, we quite often have to be careful with our brackets)

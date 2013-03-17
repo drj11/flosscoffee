@@ -123,9 +123,13 @@ Objects (aka tables, dicts, hashes)
     # or without curly brackets:
     name: "CoffeeScript"
     score: 9
-    # Iteration:
+    # Iteration, over just the keys...
     for key of table:
       key
+    # ... or both keys and values:
+    for key,value of table:
+      console.log "#{key}: #{value}"
+
 
 Assignment
 
