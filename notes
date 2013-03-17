@@ -1,9 +1,20 @@
 # Learning objectives
 
+## Exercise 0
+
+Use CoffeePlay to write simple CoffeeScript expressions.
+
+## Exercise 1
+
 Students will be able to write simple functions.
 
 Students will be able to create a simplified wrapper for a more
 general function.
+
+will be able to use a list comprehension to extract the keys and values
+of an object.
+
+## Further exercises
 
 will be able to write simple computations involving strings,
 numbers, lists, objects.
@@ -21,6 +32,17 @@ document functions that they have not written.
 
 # Quiz
 
+
+## Smallest Number
+
+What is the smallest number that is not 0 (that CoffeeScript can
+represent). Note that we can write numbers using exponential notation
+like this: ```1e-6```.
+
+## Biggest Integer
+
+What is the largest integer (whole number) whose successor cannot be
+represented?
 
 ## Rearrange the following lines into the correct program:
 
