@@ -2,13 +2,13 @@
 
     x+2 vs x +2  # see FAQ!
 
-# defines empty function, then has useless literal:
-foo = ->
-[2, 4, 6]
+defines empty function, then has useless literal:
+    foo = ->
+    [2, 4, 6]
 
 perhaps you meant:
-foo = ->
-  [2, 4, 6]
+    foo = ->
+      [2, 4, 6]
 
 Forgetting to put ```()``` when calling a function with no arguments:
 
