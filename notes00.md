@@ -8,6 +8,9 @@ go to http://drj11.github.com/coffeeplay
 
 Explain input, output, error messages.
 
+Explain what a hack coffeeplay is, and please report any bugs. We might
+even fix them live.
+
 show the "exercise 0" function call, and explain it (no brackets!).
 
 go to exercise0.md and leave it showing.
