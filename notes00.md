@@ -7,3 +7,10 @@ Invite anyone to ask questions at any time.
 go to http://drj11.github.com/coffeeplay
 
 Explain input, output, error messages.
+
+go to exercise0.md and leave it showing.
+
+
+# Notes leading up to exercise1
+
+Handle any questions, comments from exercise0
