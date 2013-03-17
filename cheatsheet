@@ -38,6 +38,36 @@
     && || # like C, JavaScript
     and or # like Python
 
+# Existential operator.
+
+# if
+
+    if candidate > max
+      max = candidate
+    # When on one line the "then" keyword is required:
+    if candidate > max then max = candidate
+    # There is no ternary operator, just use if:
+    step = if direction is 'up' then +1 else -1
+    # The "if" can come after:
+    y = 1 if x <= 1
+
+# unless
+
+Just like "if" but with the condition inverted:
+
+    console.log "starting..." unless quiet
+
+# indefinite loops
+
+    while d < -180
+      d += 360
+    while d >= 180
+      d -= 360
+    # Can aso be on one line using the "then" keyword:
+    while x/2 != 0 then x /= 2
+
+
+      
 
 # functions
 
