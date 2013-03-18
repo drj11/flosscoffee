@@ -23,7 +23,8 @@ go to exercise0.md and leave it showing.
 
 # Notes leading up to exercise1
 
-Handle any questions, comments from exercise0
+Handle any questions, comments from exercise0. Does CoffeePlay always
+respond with what you input? What does it respond with?
 
 How to call a function:
 
@@ -58,20 +59,27 @@ our brackets:
 
 (In fact, we quite often have to be careful with our brackets)
 
-Like other languages CoffeeScript can represent a collection of
-key--value pairs. It's called an object:
+Defining our own functions:
+
+    square = (x) -> x*x
+    checkPassword = (x) ->
+      if x == "secret"
+        true
+      else
+        false
+    rndRange = (base, limit) ->
+      s = limit - base
+      base + Math.random() * s
+
+Note that the thing returned from the function is the last expression of the function
+(unless we use "return").
+
+Very brief preview for those planning to do the bonus section of the exercise:
+This is a key,value table:
 
     o = {name: "pear", flavour: 3}
 
-Iterate over the keys and values to make an Array:
-
-    keys = (k for k,v of o)
-    values = (v for k,v of o)
-
-Access the properties of an object:
-
-    o.name
-    Math.max
+In CoffeeScript, it's called an object.
 
 Introduce exercise 1:
 
@@ -79,5 +87,90 @@ Introduce exercise 1:
 
 # Notes up to exercise 2
 
-    for el in [3, 4, 5]
-      console.log el
+Handle any questions/comments from Exercise 1.
+
+Objects (key,value pairs, like dicts/hashes/associate arrays from other languages):
+
+    o = { food: 'eggs', count: 6 } # Note what CoffeePlay outputs
+
+Hipsters don't like squiggly brackets (or commas):
+    o =
+      food: 'eggs'
+      count: 6
+    # Again, note what CoffeePlay outputs
+
+With Arrays you need the square brackets, but can use newline instead of comma:
+    l = [
+      "green eggs"
+      "ham"
+    ]
+
+Access the properties of an object:
+
+    o.name
+    Math.max
+
+And the elements of an Array:
+    l[0]
+
+Iteration:
+with arrays use "in", with objects use "of":
+    
+    aCopy = (x for x in l)
+    lengths = (w.length for w in l)
+
+    keys = (k for k,v of o)
+    values = (v for k,v of o)
+
+You can also use a for loop with a body which is like
+a more conventional loop:
+
+    for k,v of o
+      console.log "key", k, "value", v
+
+Strings
+
+    "Hello"
+    'World'
+    """long strings can "contain" quotes"""
+    'Don\'t usually bother with all that backslash stuff'
+    s = "Answer is #{7*6}"
+
+Strings are a bit like Arrays:
+
+    s[0]
+    s.length
+    cs = (c for c in s)
+    explode = (s) -> (c for c in s)  # ML ftw!
+
+(if someone asks about ranges, show, but remind that they're
+inclusive, not like Python)
+
+Tests and "in"
+
+Obviously CoffeeScript has if:
+
+    if s < 'zoo'
+      console.log "smaller"
+and it has the usual battery of conditions.
+    if x < 0 or x > 10
+      "out of range"
+one-liners:
+    error = "out of range" if x < 0 or x > 10
+    if x < 0 then x = -x
+    
+For strings and lists can use "in" to test for membership:
+
+    'a' in s
+    'A' in s
+    'Ans' in s # Doesn't do substring "in" just single character
+    if 'ham' in l then console.log 'i \u2665 ham'
+
+The next exercise has a function that performs a calculation, so
+you need to remember that the result of a function is the last
+expression in the function.
+
+Show exercise 2
+
+    exercise 2
+
