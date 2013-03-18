@@ -76,3 +76,8 @@ Access the properties of an object:
 Introduce exercise 1:
 
     exercise 1
+
+# Notes up to exercise 2
+
+    for el in [3, 4, 5]
+      console.log el
