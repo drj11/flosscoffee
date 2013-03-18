@@ -100,3 +100,15 @@ tend not to be required.
 
 For web-scraping, server-to-server proxying, and for tests, the
 request library is really useful. It does HTTP requests.
+
+# Documentation and learning more
+
+coffeescript.org without a doubt. It's the definitive source
+of CoffeeScript.
+
+There are a few books now about CoffeeScript. I haven't read them.
+
+You'll also need to learn about JavaScript. The ECMAScript standard
+is dry but good. Mozilla Developer Network is more accessible.
+
+Then there's always google and Stack Overflow.
