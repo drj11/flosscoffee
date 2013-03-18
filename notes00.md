@@ -6,7 +6,7 @@ Invite anyone to ask questions at any time.
 
 go to http://drj11.github.com/coffeeplay
 
-Explain input, output, error messages. For example, the different
+Explain input, output, error messages. For example, the difference
 between:
 
     "hello"
@@ -37,24 +37,12 @@ Make an Array (aka list):
 
     [2, 3, 5]
     [1..10]
-    [1, 'two', null, 2.2]
+    a = [1, 'two', null, 2.2]
 
-Array's have a length property:
-
-    a = [6..9]
-    a.length
-
-And are indexed using square brackets:
+Array's are indexed using square brackets, and have a length property:
 
     a[1]
-
-Indexing off the end of an Array gives undefined:
-
-    a[4]
-
-Which is itself a value just like any other:
-
-    undefined
+    a.length
 
 Calling a function with multiple arguments:
 
@@ -69,3 +57,22 @@ our brackets:
     Math.max 0, Math.min 1, x
 
 (In fact, we quite often have to be careful with our brackets)
+
+Like other languages CoffeeScript can represent a collection of
+key--value pairs. It's called an object:
+
+    o = {name: "pear", flavour: 3}
+
+Iterate over the keys and values to make an Array:
+
+    keys = (k for k,v of o)
+    values = (v for k,v of o)
+
+Access the properties of an object:
+
+    o.name
+    Math.max
+
+Introduce exercise 1:
+
+    exercise 1
