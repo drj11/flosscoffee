@@ -1,4 +1,4 @@
-# Stringy Exercise
+# Exercise 2: Vowels
 
 Write a function that takes a set *v* of letters and a word *w*
 and returns the number of letters of *w* that appear in *v*.
