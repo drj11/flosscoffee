@@ -20,13 +20,16 @@ before, in order to fit the legend on):
 
     piechart 200,200,100, [2,5,4], legend: ['otter', 'marmot', 'mongoose']
 
-Write a function ```legendpie``` that takes an object (with keys and
-values), and draws a pie chart where the legend is taken from the keys of
-the object, and the slice sizes are taken from the values.
+Write a function ```legendpie``` that takes two arguments: the first is a
+list of pie slice sizes (like ```simplepie```) and the second is a list of
+legend labels.  It should draw a pie chart with a legend.
 
-    legendpie = (obj) ->
-      ks = (__ for k,v of __)
-      vs = ____
-      piechart ____
+    legendpie = (vs, ls) ->
+      ____
 
-Test with ```legendpie { grass: 94, sedge: 6}```
+Bonus: ```ks = (k for k,v of obj)``` sets ```ks``` to be the list of keys
+of the object ```obj```. Write a function ```objpie``` that takes a single
+argument and draws a pie chart where the legend is taken from the keys of
+the argument, and the slice sizes are taken from the values.
+
+Test with ```objpie { grass: 94, sedge: 6}```
