@@ -174,3 +174,19 @@ Show exercise 2
 
     exercise 2
 
+# Notes leading up to Coffee Break
+
+Questions and comments from exercise 2
+
+Looking forward to more on strings, the use of CoffeeScript in the wild,
+and a look at some real CoffeeScript: the CoffeeScript compiler itself.
+
+Minute cards. Just before the break fill in a minute card: one thing
+you've learned, and one thing you're confused about. It's totally fine to
+be anonymous. Or not.
+
+For filling a few minutes:
+
+peer to peer concept map building.
+
+comparative note taking.
