@@ -185,6 +185,43 @@ Minute cards. Just before the break fill in a minute card: one thing
 you've learned, and one thing you're confused about. It's totally fine to
 be anonymous. Or not.
 
+# Notes leading up to exercise 3
+
+go see bigger.md
+
+Strings recap:
+    s = "Hello"
+    s[1]
+To join strings:
+    s + " bob"
+Modify with +=
+    s += " alice"
+    x = 7
+    console.log "I'm sorry " + x + " is not valid"
+Better:
+    console.log "I'm sorry #{x} is not valid"
+Works with arbitrary expressions:
+    console.log "Length is #{s.length}"
+Like python, also has triple quoted strings:
+    console.log """The one
+    line string
+    is so 1997"""
+And the #{} syntax work there too:
+    """#{s}
+    Date: #{Date()}"""
+The #{} magic only works with double quotes, not single quotes:
+    'I said #{s}'
+And we have triple single-quoted strings:
+    '''That's enough'''
+
+I have to remind you of a couple of things I mentioned earlier, because you'll need them in the
+next exercise:
+
+    Math.random()
+If that's too much typing:
+    rnd = Math.random
+    Math.floor(3.44)
+
 For filling a few minutes:
 
 peer to peer concept map building.
