@@ -1,6 +1,6 @@
 # cheatsheet
 
-# scalar datatypes
+scalar datatypes
 
     76 -2.6 .6e3 0o600 0x4a # numbers
     'hello Dave' "I can't do that Dave" # strings
@@ -9,7 +9,7 @@
     null # the null value
     undefined Infinity NaN # funny little things
 
-# Numbers (all 64-bit IEEE floats)
+Numbers (all 64-bit IEEE floats)
 
     + - * / % # The usual arithmetic operators (from C)
     Math.pow(x, y) # x raised to power y.  Like x**y in Fortran.
@@ -20,13 +20,25 @@
 
     # Most of the bitwise stuff is archaic, but it works.
 
-# True and False (Boolean literals)
+Strings
+
+    "add" + "strings"
+    p = "ham"
+    q = "x"
+    "#{p} and #{q}"
+    """Triple quotes can have "quotes" inside"""
+    '''Single quotes don't do the #{p} thing'''
+    p.length
+    p[0]
+    'm' in 'ham'
+
+True and False (Boolean literals)
 
     true false
     yes no
     on off
 
-# Comparisons
+Comparisons
 
     == != is isnt # equality (like === in JavaScript)
     < <= >= > 
@@ -38,9 +50,14 @@
     && || # like C, JavaScript
     and or # like Python
 
-# Existential operator.
+    in # for arrays and strings
+    of # for objects
 
-# if
+Existential operator.
+
+    # See coffeescript.org
+
+if
 
     if candidate > max
       max = candidate
@@ -51,13 +68,13 @@
     # The "if" can come after:
     y = 1 if x <= 1
 
-# unless
+unless
 
 Just like "if" but with the condition inverted:
 
     console.log "starting..." unless quiet
 
-# indefinite loops
+indefinite loops
 
     while d < -180
       d += 360
@@ -67,9 +84,7 @@ Just like "if" but with the condition inverted:
     while x/2 != 0 then x /= 2
 
 
-      
-
-# functions
+functions
 
     afun = (x) ->
       if x % 2 == 0
@@ -91,18 +106,26 @@ Just like "if" but with the condition inverted:
         s += x
       s
 
+    rnd = -> Math.random()
+    # Smallest function is just arrow:
+    nothing = ->
+
 Arrays (aka lists)
 
     [2, 3, 5, 7] # with square brackets
-    l = 'foo' # without square brackets
+    l = [ 'foo' # without commas
       'bar'
       'baz'
+      ]
+
     l.length
     l[0]    # the first item in the array
     l[-1]   # generally, undefined; not like Python
     l[1..3] # a 3 element slice
     l[..2]  # first 3 elements
     l[-2..] # last two elements (but l[-2] doesn't work)
+    # Many of these also work on strings.
+
     l.push 'zon' # push item onto end of array
     l.pop() # pop (right hand) item and remove it
 
@@ -111,6 +134,10 @@ Arrays (aka lists)
     for x in [1..10]     # array of squares
       x*x
     x*x for x in [1..10] # one liner: same array of squares
+
+    l.sort() # modifies l in-place
+    l.concat [7,8,9] # returns fresh array, does not modify l
+    l.slice() # takes a copy of l
 
     # More like lists from Python, not really like
     # arrays from Fortran or R.
