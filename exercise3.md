@@ -17,5 +17,5 @@ Write similar functions so that the following function works:
 Write a couple more, and a function that joins 2 or 3 sentences together.
 Make yours funny.
 
-Bonus: write a function that scores each story by how funny it is, and finds
-the funniest story (from 100 random trials, say).
+Bonus: write a function that scores each story by how funny it is, and
+finds the funniest story (from 100 random trials, say).
