@@ -1,6 +1,7 @@
 # Exercise 3: Madlibs
 
-Write a function ```choose``` that returns a randomly chosen element of a list.
+Write a function ```choose``` that returns a randomly chosen element of a list. It might help to
+write a function that returns a random whole number from 0 to n-1 first.
 
 Set ```adjective``` to be a list of a few adjectives (such as green, hairy, hipster).
 Set ```thing``` to be a list of things (such as ball, rug, burger).
@@ -10,8 +11,8 @@ adjective and a thing: ```noun()``` might return "hairy ball".
 
 Write similar functions so that the following function works:
 
-    intro = () ->
-      "#{name()} grabbed the #{noun()} and #{verb()}ed it"
+    intro = ->
+      "#{name()} grabbed the #{noun()} and #{verb()} it"
 
 ```intro``` could be one of a few functions that generate random sentences.
 Write a couple more, and a function that joins 2 or 3 sentences together.
