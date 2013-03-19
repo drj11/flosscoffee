@@ -101,14 +101,39 @@ tend not to be required.
 For web-scraping, server-to-server proxying, and for tests, the
 request library is really useful. It does HTTP requests.
 
+# ScraperWiki stack (if time):
+
+For web servers: Express for routing, passport for user sessions,
+MongoDB for storing application data, mongoose for modelling that
+data in CoffeeScript, eco for templating.
+
+For testing: mocha as a framework, sinon for mocking, should.js
+for assertions. And for testing the browser interface, after
+many frustrating hours with Phantom and Zombie, we now have
+frustrating hours with Selenium 2 and webdriver.
+
 # Documentation and learning more
 
+There's more to the language that we haven't had
+time to cover. Regular Expressions which are just the same as
+in JavaScript, the existential operator, and the class/object
+system. The object system is based on JavaScript's prototype
+inheritance, but is just a little bit more structured and
+more conventional. Frameworks like backbone use it extensively.
+
 coffeescript.org without a doubt. It's the definitive source
-of CoffeeScript.
+of CoffeeScript. The home page is quite terse, but pretty
+much everything is in there.
 
 There are a few books now about CoffeeScript. I haven't read them.
 
-You'll also need to learn about JavaScript. The ECMAScript standard
-is dry but good. Mozilla Developer Network is more accessible.
+You'll also need to learn about JavaScript, the builtin objects are
+JavaScript's builtin objects. The methods and operators available
+on strings, arrays, and so on, are just as in JavaScript.
 
-Then there's always google and Stack Overflow.
+The ECMAScript standard is dry and fairly hard reading at times
+(because it has to be very precise) but good.
+Mozilla Developer Network is more accessible.
+
+Then there's always google and Stack Overflow. But not everything
+you read there is true.
